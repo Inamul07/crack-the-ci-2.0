@@ -1,7 +1,7 @@
 from motor import motor_asyncio
 
 client = motor_asyncio.AsyncIOMotorClient(
-    "mongodb://rootuser:rootpass@localhost:27017/")
+    "mongodb+srv://rootadmin:rootadmin@ctci-database.zqvob0u.mongodb.net/?retryWrites=true&w=majority")
 db = client.crackTheCI
 companyCollection = db.companies
 
